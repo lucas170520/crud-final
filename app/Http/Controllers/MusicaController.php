@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Musica;
 use Illuminate\Http\Request;
+use App\Http\Requests\MusicaRequest;
 
 class MusicaController extends Controller
 {
