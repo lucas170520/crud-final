@@ -19,7 +19,7 @@
         <input type="date" name="data" id="data" value="{{ $ensaio->data }}">
 
         <label for="horario">Horário:</label>
-        <input type="time" name="horario" id="horario" value="{{ $ensaio->horario }}">
+        <input type="time" name="horario" id="horario" value="{{ \Carbon\Carbon::parse($ensaio->horario)->format('H:i') }}">
 
         <input type="submit" value="Atualizar">
     </form>
